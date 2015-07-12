@@ -1,0 +1,80 @@
+\documentclass[11pt,a4paper,english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage{babel}
+\usepackage[font=small,labelfont=bf,tableposition=top]{caption}
+\usepackage{booktabs}
+\usepackage{textcomp}
+\usepackage{lmodern}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{tabularx}
+\graphicspath{{./figures/}}
+\usepackage{color,rotating}
+\usepackage[top=3cm, bottom=3cm, left=3cm, right=3cm]{geometry}
+
+%\definecolor{webblue}{rgb}{0, 0, 0.0} % define colour for all links
+\definecolor{webblue}{rgb}{0, 0, 0.5} % define colour for all links
+
+% Hyper link stuff, works with modified elsart class, but not as well with unmodified one.
+\usepackage[pdfpagelabels,  %%% hyper-references for pdflatex
+plainpages=true,
+bookmarks=true,%                   %%% generate bookmarks
+bookmarksnumbered=true,%           %%% ... with numbers
+hypertexnames=true,%               %%% needed for correct links to figures
+breaklinks=true,%
+linkcolor=webblue,]{hyperref}
+\hypersetup{
+colorlinks  = true,
+linkcolor = webblue,
+urlcolor = webblue,
+citecolor = webblue,
+pdfauthor   = {Bob Myhill},
+pdfsubject = {},
+pdftitle    = {MSH paper Supplementary Materials},
+pdfkeywords = {},
+}
+
+\newcommand{\doi}[1]{\href{http://dx.doi.org/#1}{doi:#1}}
+
+
+%opening
+\title{Supplementary Materials}
+\author{Bob Myhill}
+
+\begin{document}
+
+\maketitle
+
+\section{Anhydrous melting model}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.9\textwidth]{figures/enstatite_melting}
+\caption{Enstatite melting}
+\label{fig:enstatite_melting}
+\end{figure}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.9\textwidth]{figures/forsterite_melting}
+\caption{Forsterite melting}
+\label{fig:forsterite_melting}
+\end{figure}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.9\textwidth]{figures/MS_melting_13GPa}
+\caption{MgO-SiO$_2$ binary diagram at 13 GPa}
+\label{fig:MS_binary}
+\end{figure}
+
+\clearpage
+
+
+\bibliographystyle{myhillmisc} % bibliography style 
+\bibliography{../../references/references} % References file
+
+\end{document}
