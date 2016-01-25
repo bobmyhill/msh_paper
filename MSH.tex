@@ -4,7 +4,7 @@
 \usepackage{pdflscape}
 \modulolinenumbers[5]
 
-\journal{Geochemica and Cosmochemica Acta}
+\journal{Geochimica et Cosmochimica Acta}
 
 %%%%%%%%%%%%%%%%%%%%%%%
 %% Elsevier bibliography styles
@@ -148,7 +148,7 @@ K_{(1)} = \frac{{X_{\textrm{OH}_{tm}^-}}^2}{X_{\textrm{H}_2\textrm{O}} X_{\textr
 \label{eqn:equilibrium_constant}
 \end{equation}
 
-The equilibrium constant is related to the energy $\Delta G_{(1)}$ required to protonate two bridging oxygens with a water molecule
+The equilibrium constant is related to the energy $\Delta G_{(1)}$ required to create two terminal OH groups from a bridging oxygen and a water molecule
 \begin{equation}
 K_{(1)} = \exp\left(\frac{-\Delta G_{(1)}}{RT}\right)
 \end{equation}
@@ -165,12 +165,12 @@ A number of models have been presented to investigate the behaviour of concentra
 To describe melting in the SiO$_2$-H$_2$O system, \cite{HM2012} generalised the aforementioned models by allowing non-ideality between the two endmembers. The excess term $\Delta G_{(1)}$(P,T) for the formation of OH$^-$ groups was assumed to be independent of composition; all oxygens are equally available for protonation, and the local extent of protonation does not affect the energy required for each further protonation.
 
 
-These models can be used to calculate melt compositions by equating the gibbs free energy of the solid $G^s_{solid}$ with the chemical potential of the component with the composition of that solid in the melt $\mu^s_{melt}$:
+These models can be used to calculate solid-melt equilibria by equating the Gibbs free energy of the solid $G^s_{solid}$ with the chemical potential of the melt component with the same composition $\mu^s_{melt}$:
 \begin{equation}
 G^s_{solid} = \mu^s_{melt} = G^s_{melt} - RT \ln a^s_{melt}
 \label{eqn:equilibrium}
 \end{equation}
-In this study, we use the thermodynamic dataset of \cite{SLB2011} to calculate $G^s_{solid}$ for periclase, forsterite and its high pressure polymorphs, orthoenstatite, high pressure clinoenstatite, stishovite and coesite. A modified version of the molecular dynamics-derived anhydrous melt model of \cite{DKS2013} is used to calculate $G^s_{melt}$, and the \cite{SS1985} model is used to calculate $a^s_{melt}$. The calculations in the work were undertaken with the mineral physics toolkit Burnman \citep[available from \url{https://geodynamics.org/cig/software/burnman/}][]{CHRU2014}.
+In this study, we use the thermodynamic dataset of \cite{SLB2011} to calculate $G^s_{solid}$ for periclase, forsterite and its high pressure polymorphs, orthoenstatite, high pressure clinoenstatite, coesite and stishovite. A modified version of the molecular dynamics-derived anhydrous melt model of \cite{DKS2013} is used to calculate $G^s_{melt}$, and the \cite{SS1985} model is used to calculate $a^s_{melt}$. The calculations in the work were undertaken with the mineral physics toolkit Burnman \citep[available from \url{https://geodynamics.org/cig/software/burnman/}][]{CHRU2014}.
 
 \subsection{The anhydrous melt model}
 Thermodynamic models of MgO-SiO$_2$ melts are currently in their infancy. Many of the techniques used to constrain the thermodynamic properties (particularly the equations of state) of solids cannot be used on liquids as a result of their highly dynamic behaviour. Therefore in this study, we use MgO and SiO$_2$ melt models derived from molecular dynamics simulations \citep{DKS2013}, and fit a simplified mixing curve based on experimental data. First, however, the thermodynamic properties of the endmember melts need to be adjusted to fit the experimentally derived thermodynamic data at the melting point. This step was unnecessary in the original study of \cite{DKS2013} because solid properties were also obtained by molecular dynamics simulations. Such simulations do not provide good estimates of absolute energies and entropies, and so the values of the solids were obtained by fixing the melting point at a given pressure to the experimentally derived values (0 GPa, 3070 K for periclase, 14 GPa, 3120 K for stishovite). It turns out that the MD-determined entropy of periclase is almost identical to the experimentally determined values at all pressures and temperatures \citep{SLB2011}, so we only needed to adjust the standard state free energy. This leads to a periclase melting point of $\sim$ 4180 K at 13 GPa, similar to that determined by previous ab-initio studies \citep{Alfe2005}. We notes that experimental results vary by about 1000 K about this value \citep[3100 -- 5373 K at 13 GPa][]{ZB1994,ZF2008}. Current thermodynamic models for periclase cannot be extrapolated to the extreme temperatures predicted by the \cite{ZF2008} data. However, assuming that the volume change of melting is roughly constant with temperature (1.8 cm$^3$/mol at 13 GPa), the entropy of melting at a melting point of 5373 K would be about 50\% of that for a melting point of 4180 K (13.25 vs. 27.5 J/K/mol). At 13 GPa and 2000 K, MgO melt would actually be 15 kJ/mol \emph{more} stable as a result of this lower entropy.
@@ -274,7 +274,7 @@ The melting point depression of forsterite in the presence of water at 13 GPa is
 \begin{figure}[ht!]
   \centering
       %\includegraphics[width=0.8\textwidth]{figures/forsterite}
-      \caption{The forsterite-water phase diagram at 13 GPa, based on current experimental results. The thermodynamics of pure forsterite are taken from the literature \citep{SLB2011}, and the properties of the anhydrous melt are from the mixing model described in the text. At high temperatures, the forsterite liquidus is metastable with respect to periclase + melt.}
+      \caption{The forsterite-water phase diagram at 13 GPa, based on current experimental results. The thermodynamics of pure forsterite are taken from the literature \citep{SLB2011}, and the properties of the anhydrous melt are from the mixing model described in the text. At high temperatures, the forsterite liquidus is metastable with respect to periclase + melt. High temperature data come from the study of \cite{NDMF2015}.}
   \label{fig:foH}
 \end{figure}
 \clearpage
@@ -286,7 +286,7 @@ The melting of high pressure clinoenstatite in the presence of water is shown in
 \begin{figure}[ht!]
   \centering
       %\includegraphics[width=0.8\textwidth]{figures/enstatite}
-  \caption{The clinoenstatite-water phase diagram at 13 GPa, based on current experimental results. The thermodynamics of pure high pressure clinoenstatite are taken from the literature \citep{SLB2011}, and the properties of the anhydrous melt are from the mixing model described in the text.}
+  \caption{The clinoenstatite-water phase diagram at 13 GPa, based on current experimental results. The thermodynamics of pure high pressure clinoenstatite are taken from the literature \citep{SLB2011}, and the properties of the anhydrous melt are from the mixing model described in the text. High temperature data come from the study of \cite{NDMF2015}.}
   \label{fig:eoH}
 \end{figure}
 
